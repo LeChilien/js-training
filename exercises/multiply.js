@@ -9,7 +9,55 @@
  */
 
 // Your code :
+function multiply(nb1, nb2) {
+  if (nb1 > 0 && nb2 > 0) {
+    let add = 0;
+    let compteur = 0;
+    while (compteur < nb2) {
+      add += nb1;
+      compteur++;
+    }
+    return (add)
+  }
 
+  if (nb1 === 0 || nb2 === 0) {
+    return 0;
+  }
+
+  if (nb1 > 0 && nb2 < 0) {
+    let add = 0;
+    let compteur = 0;
+    nb2=(-nb2)
+    while (compteur < nb2) {
+      add += nb1;
+      compteur++;
+    }
+    return (-add)
+  }
+
+  if (nb1 < 0 && nb2 > 0) {
+    let add = 0;
+    let compteur = 0;
+    nb1=(-nb1)
+    while (compteur < nb2) {
+      add += nb1;
+      compteur++;
+    }
+    return (-add)
+  }
+
+  if (nb1 < 0 && nb2 < 0) {
+    let add = 0;
+    let compteur = 0;
+    nb1=(-nb1)
+    nb2=(-nb2)
+    while (compteur < nb2) {
+      add += nb1;
+      compteur++;
+    }
+    return (add)
+  }
+}
 //* Begin of tests
 const assert = require('assert')
 
