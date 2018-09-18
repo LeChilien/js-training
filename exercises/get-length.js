@@ -8,7 +8,10 @@
  */
 
 // Your code :
-
+function getLength(toCount) {
+  let result = toCount.length;
+  return result
+}
 //* Begin of tests
 const assert = require('assert')
 
