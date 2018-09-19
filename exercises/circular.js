@@ -9,11 +9,11 @@
 
 // Your code :
 
-//* Begin of tests
-const assert = require('assert')
+let object = {circular:"circular"};
 
-assert.strictEqual(typeof circular, 'object')
-assert.strictEqual(circular.circular, circular)
+return object
+
+//let object = { objectName1 : "propertyName1", objectName2 : "propertyName2", objectName3:"propertyName3")
 assert.strictEqual(circular.circular.circular, circular)
 assert.strictEqual(circular.circular.circular.circular, circular)
 assert.strictEqual(circular.circular.circular.circular.circular, circular)
